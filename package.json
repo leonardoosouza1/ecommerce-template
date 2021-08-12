@@ -10,7 +10,9 @@
         "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
         "start": " concurrently \"npm run server\" \"npm run client\"",
         "startt": "concurrently \"npm run serverm\" \"npm run client\"",
-        "heroku-postbuild": " concurrently \"npm run server-install\" \"npm run client-install\""
+        "heroku-postbuild": "npm run install-all && npm run server && npm run heroku",
+
+        "heroku": "cd frontend && npm install && npm run build"
     },
     "keywords": [],
     "author": "",
