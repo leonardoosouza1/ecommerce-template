@@ -1,0 +1,22 @@
+{
+    "name": "starter",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "server": "cd backend && npm run start",
+        "client": "cd frontend && npm run dev",
+        "server-install": "cd backend && npm install",
+        "client-install": "cd front && npm install",
+        "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+        "start": " concurrently \"npm run server\" \"npm run client\"",
+        "startt": "concurrently \"npm run serverm\" \"npm run client\"",
+        "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "concurrently": "^5.3.0"
+    },
+    "devDependencies": {}
+}
